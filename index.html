@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up Form</title>
-    <link rel="stylesheet" href="form.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="image-section">
-
-        <img src="./assets/logo.JPG" height="70"/>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+  <div class="container">
+    <
+    <div class="left-section">
+      <img src="assets/background.jpg" alt="Fern background" class="background-image">
+      <div class="logo-overlay">
+        <img src="./assets/logo.png" alt="Odin Logo" class="logo">
+        <p class="odinname">ODIN</p>
       </div>
-      <div class="form-section">
-        <h2>Sign Up Now!</h2>
-        <p>
-          This is not a real online service! But you know you want to get
-          started. Sign up and realize your dreams.
-        </p>
-        You know you want to.
-        <form>
-          <label for="firstname">Firstname:</label>
-          <input type="text" id="firstname" name="firstname" required />
-
-          <label for="lastname">Lastname:</label>
-          <input type="text" id="lastname" name="lastname" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-
-          <label for="confirmpassword">Confirm Password:</label>
-          <input
-            type="password"
-            id="confirmpassword"
-            name="confirmpassword"
-            required
-          />
-
-          <button type="submit">Sign Up</button>
-        </form>
-      </div>
+      <p class="credit">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
     </div>
-  </body>
+ 
+   
+    <div class="right-section">
+      <div class="text-intro">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+        <p>You<em> know</em> you want to.</p>
+      </div>
+    <div class="signup-section">
+      <h2>Let's do this!</h2>
+    
+      <form class="signup-form">
+        <div class="form-row">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" required>
+        </div>
+        <div class="form-row">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required>
+          <p class="error"></p>
+        </div>
+        <div class="form-row">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" name="confirm-password" id="confirm-password" required>
+        </div>
+      </form>
+    </div>
+    <div class="buttons">
+        <button type="submit" class="create-account-btn">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+    </div>
+  </div>
+</body>
 </html>
