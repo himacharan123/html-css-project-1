@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-section">
+
+        <img src="./assets/logo.JPG" height="70"/>
+      </div>
+      <div class="form-section">
+        <h2>Sign Up Now!</h2>
+        <p>
+          This is not a real online service! But you know you want to get
+          started. Sign up and realize your dreams.
+        </p>
+        You know you want to.
+        <form>
+          <label for="firstname">Firstname:</label>
+          <input type="text" id="firstname" name="firstname" required />
+
+          <label for="lastname">Lastname:</label>
+          <input type="text" id="lastname" name="lastname" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="confirmpassword">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirmpassword"
+            name="confirmpassword"
+            required
+          />
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
